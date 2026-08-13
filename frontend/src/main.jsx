@@ -7,6 +7,9 @@ import App from "./App.jsx";
 
 import { CartProvider } from "./context/CartContext.jsx";
 import { AuthProvider } from "./context/AuthContext.jsx";
+import { AddressProvider } from "./context/AddressContext.jsx";
+import { CouponProvider } from "./context/CouponContext";
+import { BillingProvider } from "./context/BillingContext";
 
 
 createRoot(document.getElementById("root")).render(
@@ -14,7 +17,13 @@ createRoot(document.getElementById("root")).render(
         <BrowserRouter>
             <AuthProvider>
                 <CartProvider>
-                    <App />
+                    <CouponProvider>
+                        <BillingProvider>
+                            <AddressProvider>
+                                <App />
+                            </AddressProvider>
+                        </BillingProvider>
+                    </CouponProvider>
                 </CartProvider>
             </AuthProvider>
         </BrowserRouter>

@@ -7,4 +7,8 @@ export default defineConfig({
     react(),
     tailwindcss(),
   ],
+  define: {
+    // 💡 Maps process.env globally so legacy or CRA code doesn't crash in Vite
+    'process.env': {},
+  },
 })

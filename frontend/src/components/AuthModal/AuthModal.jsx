@@ -121,7 +121,7 @@ const AuthModal = ({ closeModal }) => {
                     ">
                         {isLogin
                             ? "Welcome Back"
-                            : "Join Zestora"
+                            : "Welcome to Zestora"
                         }
                     </h2>
 
