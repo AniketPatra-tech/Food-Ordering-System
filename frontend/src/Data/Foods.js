@@ -54,7 +54,27 @@ import chickenMomosImage from "../assets/FoodPictures/ChickenMomos.png";
 import friedVegMomosImage from "../assets/FoodPictures/FriedVegMomos.png";
 import friedChickenMomosImage from "../assets/FoodPictures/FriedChickenMomos.png";
 import cheeseCornMomosImage from "../assets/FoodPictures/CheeseCornMomos.png";
-
+import paneerTikkaImage from "../assets/FoodPictures/PaneerTikka.png";
+import chickenTikkaImage from "../assets/FoodPictures/ChickenTikka.png";
+import chickenWingsImage from "../assets/FoodPictures/ChickenWings.png";
+import fishFingerImage from "../assets/FoodPictures/FishFinger.png";
+import cheeseGarlicBreadImage from "../assets/FoodPictures/CheeseGarlicBread.png";
+import chickenBiriyaniImage from "../assets/FoodPictures/ChickenBiriyani.png";
+import eggBiriyaniImage from "../assets/FoodPictures/EggBiriyani.png";
+import paneerBiriyaniImage from "../assets/FoodPictures/PaneerBiriyani.png";
+import kolkataBiriyaniImage from "../assets/FoodPictures/SpecialKolkataBiriyani.png";
+import familyMuttonBiriyaniImage from "../assets/FoodPictures/FamilyPackMuttonBiriyani.png";
+import masalaDosaImage from "../assets/FoodPictures/MasalaDosa.png";
+import plainDosaImage from "../assets/FoodPictures/PlainDosa.png";
+import idliSambarImage from "../assets/FoodPictures/IdliSambar.png";
+import meduvadaImage from "../assets/FoodPictures/MeduVada.png";
+import cheesedosaImage from "../assets/FoodPictures/CheeseDosa.png";
+import vegsandwichImage from "../assets/FoodPictures/VegSandwich.png";
+import grilledcheesesandwichImage from "../assets/FoodPictures/GrilledCheeseSandwich.png";
+import chickenSandwichImage from "../assets/FoodPictures/ChickenSandwich.png";
+import clubSandwichImage from "../assets/FoodPictures/ClubSandwich.png";
+import paneerSandwichImage from "../assets/FoodPictures/PaneerSandwich.png";
+import butterChickenImage from "../assets/FoodPictures/ButterChicken.png";
 
 
 export const foods = [
@@ -919,7 +939,7 @@ export const foods = [
     preparationTime: "18 min",
     bestseller: true,
     available: true,
-    image: "/foods/paneer-tikka.jpg",
+    image: paneerTikkaImage,
     description: "Smoky grilled paneer with Indian spices."
     },
 
@@ -934,7 +954,7 @@ export const foods = [
     preparationTime: "20 min",
     bestseller: true,
     available: true,
-    image: "/foods/chicken-tikka.jpg",
+    image: chickenTikkaImage,
     description: "Tender chicken marinated and grilled."
     },
 
@@ -949,7 +969,7 @@ export const foods = [
     preparationTime: "18 min",
     bestseller: true,
     available: true,
-    image: "/foods/chicken-wings.jpg",
+    image: chickenWingsImage,
     description: "Spicy and crispy chicken wings."
     },
 
@@ -964,7 +984,7 @@ export const foods = [
     preparationTime: "18 min",
     bestseller: false,
     available: true,
-    image: "/foods/fish-finger.jpg",
+    image: fishFingerImage,
     description: "Crispy fish fingers served with dip."
     },
 
@@ -979,7 +999,7 @@ export const foods = [
     preparationTime: "10 min",
     bestseller: true,
     available: true,
-    image: "/foods/cheese-garlic-bread.jpg",
+    image: cheeseGarlicBreadImage,
     description: "Garlic bread loaded with melted cheese."
     },
 
@@ -996,7 +1016,7 @@ export const foods = [
     preparationTime: "22 min",
     bestseller: true,
     available: true,
-    image: "/foods/chicken-biriyani.jpg",
+    image: chickenBiriyaniImage,
     description: "Aromatic basmati rice with juicy chicken."
     },
 
@@ -1011,7 +1031,7 @@ export const foods = [
     preparationTime: "18 min",
     bestseller: false,
     available: true,
-    image: "/foods/egg-biriyani.jpg",
+    image: eggBiriyaniImage,
     description: "Classic egg biriyani with Bengali spices."
     },
 
@@ -1026,7 +1046,7 @@ export const foods = [
     preparationTime: "20 min",
     bestseller: false,
     available: true,
-    image: "/foods/paneer-biriyani.jpg",
+    image: paneerBiriyaniImage,
     description: "Flavorful biriyani loaded with paneer."
     },
 
@@ -1041,7 +1061,7 @@ export const foods = [
     preparationTime: "25 min",
     bestseller: true,
     available: true,
-    image: "/foods/kolkata-biriyani.jpg",
+    image: kolkataBiriyaniImage,
     description: "Authentic Kolkata-style biriyani with potato."
     },
 
@@ -1056,7 +1076,7 @@ export const foods = [
     preparationTime: "30 min",
     bestseller: true,
     available: true,
-    image: "/foods/family-mutton-biriyani.jpg",
+    image: familyMuttonBiriyaniImage,
     description: "Large family pack serving 3-4 people."
     },
 
@@ -1073,7 +1093,7 @@ export const foods = [
     preparationTime: "15 min",
     bestseller: true,
     available: true,
-    image: "/foods/masala-dosa.jpg",
+    image: masalaDosaImage,
     description: "Crispy dosa with potato masala filling."
     },
 
@@ -1088,7 +1108,7 @@ export const foods = [
     preparationTime: "12 min",
     bestseller: false,
     available: true,
-    image: "/foods/plain-dosa.jpg",
+    image: plainDosaImage,
     description: "Traditional South Indian dosa."
     },
 
@@ -1103,7 +1123,7 @@ export const foods = [
     preparationTime: "10 min",
     bestseller: true,
     available: true,
-    image: "/foods/idli-sambar.jpg",
+    image: idliSambarImage,
     description: "Soft idlis served with sambar."
     },
 
@@ -1118,7 +1138,7 @@ export const foods = [
     preparationTime: "12 min",
     bestseller: false,
     available: true,
-    image: "/foods/medu-vada.jpg",
+    image: meduvadaImage,
     description: "Crispy lentil doughnuts."
     },
 
@@ -1133,7 +1153,7 @@ export const foods = [
     preparationTime: "18 min",
     bestseller: true,
     available: true,
-    image: "/foods/cheese-dosa.jpg",
+    image: cheesedosaImage,
     description: "Masala dosa topped with cheese."
     },
 
@@ -1150,7 +1170,7 @@ export const foods = [
     preparationTime: "8 min",
     bestseller: false,
     available: true,
-    image: "/foods/veg-sandwich.jpg",
+    image: vegsandwichImage,
     description: "Fresh vegetables layered in toasted bread."
     },
 
@@ -1165,7 +1185,7 @@ export const foods = [
     preparationTime: "10 min",
     bestseller: true,
     available: true,
-    image: "/foods/grilled-cheese-sandwich.jpg",
+    image: grilledcheesesandwichImage,
     description: "Melted cheese in grilled bread."
     },
 
@@ -1180,7 +1200,7 @@ export const foods = [
     preparationTime: "10 min",
     bestseller: true,
     available: true,
-    image: "/foods/chicken-sandwich.jpg",
+    image: chickenSandwichImage,
     description: "Grilled chicken with fresh vegetables."
     },
 
@@ -1195,7 +1215,7 @@ export const foods = [
     preparationTime: "12 min",
     bestseller: true,
     available: true,
-    image: "/foods/club-sandwich.jpg",
+    image: clubSandwichImage,
     description: "Triple-layer sandwich with chicken."
     },
 
@@ -1210,7 +1230,7 @@ export const foods = [
     preparationTime: "10 min",
     bestseller: false,
     available: true,
-    image: "/foods/paneer-sandwich.jpg",
+    image: paneerSandwichImage,
     description: "Spiced paneer stuffed sandwich."
     },
 
@@ -1227,7 +1247,7 @@ export const foods = [
     preparationTime: "22 min",
     bestseller: true,
     available: true,
-    image: "/foods/butter-chicken.jpg",
+    image: butterChickenImage,
     description: "Creamy North Indian chicken curry."
     },
 
