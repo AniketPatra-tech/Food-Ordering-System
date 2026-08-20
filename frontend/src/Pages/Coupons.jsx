@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import {
     Copy,
     Check,
@@ -7,16 +8,16 @@ import {
 } from "lucide-react";
 
 import welcomeCoupon from "../assets/coupons/welcome-coupon.png";
-
 import { useCoupon } from "../context/CouponContext";
 
 const Coupons = () => {
     const [copied, setCopied] = useState(false);
 
+    const navigate = useNavigate();
+
     const {
-        appliedCoupon,
-        applyCoupon,
-        isCouponApplied
+        selectedCoupon,
+        setSelectedCoupon
     } = useCoupon();
 
     const couponCode = "FIRST30";
@@ -41,12 +42,18 @@ const Coupons = () => {
     };
 
     const handleApplyCoupon = () => {
-        applyCoupon({
+        const coupon = {
             code: "FIRST30",
             discountType: "percentage",
             discountValue: 30,
             minOrder: 149
-        });
+        };
+
+        setSelectedCoupon(coupon);
+
+        setTimeout(() => {
+            navigate("/menu");
+        }, 500);
     };
 
     return (
@@ -70,15 +77,22 @@ const Coupons = () => {
                     </p>
                 </div>
 
-                {/* APPLIED COUPON */}
+                {/* SELECTED COUPON */}
 
-                {appliedCoupon && (
+                {selectedCoupon && (
                     <div className="mb-5 rounded-xl border border-green-500/20 bg-green-500/10 px-4 py-3">
-                        <p className="text-sm text-green-400">
-                            Coupon Applied:
+                        <p className="text-sm font-medium text-green-400">
+                            Selected Coupon:
                             <span className="ml-1 font-bold">
-                                {appliedCoupon.code}
+                                {selectedCoupon.code}
                             </span>
+                        </p>
+
+                        <p className="mt-1 text-xs text-green-300">
+                            Add food to your cart and
+                            the discount will be applied
+                            automatically if the minimum
+                            order value is met.
                         </p>
                     </div>
                 )}
@@ -123,7 +137,8 @@ const Coupons = () => {
                                     </h2>
 
                                     <p className="mt-0.5 text-[11px] text-gray-500">
-                                        On your first order • Min. ₹149
+                                        Get 30% OFF on your first
+                                        order • Minimum cart value ₹149
                                     </p>
                                 </div>
 
@@ -141,6 +156,8 @@ const Coupons = () => {
                                         {couponCode}
                                     </span>
                                 </div>
+
+                                {/* COPY BUTTON */}
 
                                 <button
                                     type="button"
@@ -160,27 +177,26 @@ const Coupons = () => {
                                     )}
                                 </button>
 
+                                {/* USE COUPON BUTTON */}
+
                                 <button
                                     type="button"
-                                    onClick={
-                                        handleApplyCoupon
-                                    }
-                                    disabled={isCouponApplied(
+                                    onClick={handleApplyCoupon}
+                                    disabled={
+                                        selectedCoupon?.code ===
                                         "FIRST30"
-                                    )}
+                                    }
                                     className={
-                                        isCouponApplied(
-                                            "FIRST30"
-                                        )
+                                        selectedCoupon?.code ===
+                                        "FIRST30"
                                             ? "flex h-9 items-center rounded-lg bg-green-500 px-3 text-[10px] font-bold text-white"
                                             : "flex h-9 items-center rounded-lg bg-[#D4AF37] px-3 text-[10px] font-bold text-black transition hover:bg-[#F5D77A]"
                                     }
                                 >
-                                    {isCouponApplied(
-                                        "FIRST30"
-                                    )
-                                        ? "Applied ✓"
-                                        : "Apply"}
+                                    {selectedCoupon?.code ===
+                                    "FIRST30"
+                                        ? "Selected ✓"
+                                        : "Use Coupon"}
                                 </button>
                             </div>
 

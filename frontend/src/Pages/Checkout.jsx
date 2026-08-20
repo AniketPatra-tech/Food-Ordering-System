@@ -23,7 +23,10 @@ import { useAuth } from "../context/AuthContext";
 function Checkout() {
     const navigate = useNavigate();
 
-    const { cartItems } = useCart();
+    const {
+        cartItems,
+        couponDiscount,
+    } = useCart();
 
     const {
         addresses,
@@ -83,7 +86,7 @@ function Checkout() {
     }, [cartItems]);
 
     const deliveryFee = subtotal > 0 ? 40 : 0;
-    const discount = 0;
+    const discount = couponDiscount || 0;
 
     const total = Math.max(
         subtotal + deliveryFee - discount,

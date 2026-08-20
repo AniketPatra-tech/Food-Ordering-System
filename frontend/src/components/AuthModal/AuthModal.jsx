@@ -66,10 +66,12 @@ const AuthModal = ({ closeModal }) => {
             backdrop-blur-sm
         ">
 
-            <div className="
+            <div
+                className="
                 relative
                 w-[90%]
                 max-w-md
+                overflow-hidden
                 rounded-3xl
                 border
                 border-[#D4AF37]/20
@@ -77,6 +79,9 @@ const AuthModal = ({ closeModal }) => {
                 p-8
                 shadow-2xl
             ">
+                <div className="absolute top-0 left-0 h-1 w-full bg-[#FF9933]" />
+                <div className="absolute top-1 left-0 h-1 w-full bg-white" />
+                <div className="absolute top-2 left-0 h-1 w-full bg-[#138808]" />
 
                 <button
                     onClick={closeModal}
@@ -95,7 +100,9 @@ const AuthModal = ({ closeModal }) => {
 
                 <div className="text-center mb-7">
 
-                    <div className="
+                    <div
+                        className="
+                        relative
                         mx-auto
                         mb-3
                         flex
@@ -105,13 +112,29 @@ const AuthModal = ({ closeModal }) => {
                         justify-center
                         rounded-2xl
                         bg-gradient-to-br
-                        from-[#D4AF37]
-                        to-[#FFB800]
+                        from-[#FF9933]
+                        via-white
+                        to-[#138808]
                         text-black
                         text-2xl
                         font-black
+                        shadow-lg
+                        shadow-[#FF9933]/20
                     ">
                         Z
+
+                        <div
+                            className="
+                            absolute
+                            -bottom-1
+                            left-1/2
+                            h-1
+                            w-8
+                            -translate-x-1/2
+                            rounded-full
+                            bg-[#000080]
+                            "
+                        />
                     </div>
 
                     <h2 className="

@@ -4,7 +4,11 @@ import Categories from "../components/Categories/Categories";
 import BannerSlider from "../components/BannerSlider/BannerSlider";
 import CravingSlider from "../components/BannerSlider/CravingSlider";
 import PromotionBanner from "../components/PromotionBanner/PromotionBanner";
-
+import CelebrityFavouriteBanner from "../components/CelebrityFavouriteBanner/CelebrityFavouriteBanner";
+import IndependenceBanner from "../assets/IndependenceBanner.png";
+import IndependenceBanner2 from "../assets/IndependenceBanner2.png"
+import IndependenceBanner3 from "../assets/IndependenceBanner3.png"
+import IndependenceBanner4 from "../assets/IndependenceBanner4.png"
 
 function Home() {
 
@@ -61,7 +65,26 @@ function Home() {
         </div>
         */}
 
+        <section className="px-3 pt-3 md:px-6 md:pt-5">
+            <div className="mx-auto max-w-7xl overflow-hidden rounded-3xl border border-[#D4AF37]/10 bg-[#151515] shadow-xl">
+
+                <img
+                    src={IndependenceBanner4}
+                    alt="80th Independence Day"
+                    className="
+                        w-full
+                        h-auto
+                        object-cover
+                        transition
+                        duration-500
+                    "
+                />
+            </div>
+        </section>
+
         <PromotionBanner />
+
+        <CelebrityFavouriteBanner/>
 
         <BannerSlider />
 

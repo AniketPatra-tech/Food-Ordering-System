@@ -1,31 +1,33 @@
 import Navbar from "../components/Navbar/Navbar";
 import { Link } from "react-router-dom";
+import { useState } from "react";
 
-// import heritageImage from "../assets/about/bengali-heritage.jpg";
-// import chef1 from "../assets/about/chef-1.jpg";
-// import chef2 from "../assets/about/chef-2.jpg";
-// import chef3 from "../assets/about/chef-3.jpg";
+import heritageImage from "../assets/about/BengaliTraditionAbout.png";
+import chef1 from "../assets/about/Chef-1.png";
+import chef2 from "../assets/about/Chef-2.png";
+import chef3 from "../assets/about/Chef-3.png";
 
 function About() {
+  const [selectedChef, setSelectedChef] = useState(null);
   const chefs = [
     {
-      name: "Chef Soudipta Banerjee",
+      name: "Mrs. Anindita Banerjee",
       role: "Executive Chef",
-    //   image: chef1,
+      image: chef1,
       description:
         "Specialist in authentic Bengali cuisine with years of experience preserving traditional recipes."
     },
     {
-      name: "Chef Arindam Roy",
+      name: "Mr. Arindam Roy",
       role: "Head of Traditional Cuisine",
-    //   image: chef2,
+      image: chef2,
       description:
         "Passionate about Bengal's regional dishes, seafood delicacies, and heritage cooking techniques."
     },
     {
-      name: "Chef Priyanka Sen",
+      name: "Ms. Priyanka Sen",
       role: "Dessert Specialist",
-    //   image: chef3,
+      image: chef3,
       description:
         "Creator of signature Bengali sweets and premium dessert experiences."
     }
@@ -144,8 +146,8 @@ function About() {
         >
           <div>
             <img
-            //   src={heritageImage}
-            //   alt="Bengali Heritage"
+              src={heritageImage}
+              alt="Bengali Heritage"
               className="
               h-full
               w-full
@@ -190,66 +192,219 @@ function About() {
           </div>
         </section>
 
-        {/* CHEFS */}
         <section className="mt-12">
           <h2
             className="
-            text-center
-            text-3xl
-            font-bold
-            text-[#D4AF37]
+              text-center
+              text-3xl
+              font-bold
+              text-[#D4AF37]
             "
           >
             Meet Our Chefs
           </h2>
 
+          <p
+            className="
+              mx-auto
+              mt-3
+              max-w-2xl
+              text-center
+              text-gray-400
+            "
+          >
+            Behind every unforgettable dish is a passionate chef dedicated to
+            preserving Bengali culinary heritage while delivering exceptional
+            dining experiences.
+          </p>
+
           <div
             className="
-            mt-8
-            grid
-            gap-6
-            md:grid-cols-2
-            lg:grid-cols-3
+              mt-10
+              grid
+              gap-8
+              md:grid-cols-2
+              lg:grid-cols-3
             "
           >
             {chefs.map((chef) => (
               <div
                 key={chef.name}
                 className="
-                rounded-3xl
-                border
-                border-white/10
-                bg-[#151515]
-                p-6
-                text-center
+                  rounded-3xl
+                  border
+                  border-white/10
+                  bg-[#151515]
+                  p-6
+                  text-center
+                  transition-all
+                  duration-300
+                  hover:-translate-y-2
+                  hover:border-[#D4AF37]/30
+                  hover:shadow-xl
+                  hover:shadow-[#D4AF37]/10
                 "
               >
-                <img
-                  src={chef.image}
-                  alt={chef.name}
-                  className="
-                  mx-auto
-                  h-32
-                  w-32
-                  rounded-full
-                  object-cover
-                  "
-                />
+                {/* Chef Image */}
 
-                <h3 className="mt-5 text-xl font-bold text-white">
+                <div className="flex justify-center">
+                  <div
+                    className="
+                      rounded-full
+                      bg-gradient-to-br
+                      from-[#D4AF37]
+                      via-[#F5D77A]
+                      to-[#B8860B]
+                      p-1.5
+                    "
+                  >
+                    <img
+                      src={chef.image}
+                      alt={chef.name}
+                      onClick={() => setSelectedChef(chef)}
+                      className="
+                        h-52
+                        w-52
+                        cursor-pointer
+                        rounded-full
+                        object-cover
+                        bg-[#151515]
+                        transition-all
+                        duration-500
+                        hover:scale-105
+                      "
+                    />
+                  </div>
+                </div>
+
+                {/* Chef Info */}
+
+                <h3 className="mt-6 text-xl font-bold text-white">
                   {chef.name}
                 </h3>
 
-                <p className="mt-2 text-[#D4AF37]">
+                <p className="mt-2 font-medium text-[#D4AF37]">
                   {chef.role}
                 </p>
 
-                <p className="mt-4 text-sm text-gray-400">
+                <div
+                  className="
+                    mx-auto
+                    mt-3
+                    h-[2px]
+                    w-12
+                    bg-gradient-to-r
+                    from-transparent
+                    via-[#D4AF37]
+                    to-transparent
+                  "
+                />
+
+                <p
+                  className="
+                    mt-4
+                    text-sm
+                    leading-relaxed
+                    text-gray-400
+                  "
+                >
                   {chef.description}
                 </p>
+
+                <button
+                  onClick={() => setSelectedChef(chef)}
+                  className="
+                    mt-5
+                    rounded-full
+                    border
+                    border-[#D4AF37]/30
+                    px-5
+                    py-2
+                    text-sm
+                    font-medium
+                    text-[#D4AF37]
+                    transition
+                    hover:bg-[#D4AF37]
+                    hover:text-black
+                  "
+                >
+                  View Profile
+                </button>
               </div>
             ))}
           </div>
+
+          {/* Full Image Modal */}
+
+          {selectedChef && (
+            <div
+              onClick={() => setSelectedChef(null)}
+              className="
+                fixed
+                inset-0
+                z-[999]
+                flex
+                items-center
+                justify-center
+                bg-black/90
+                p-4
+                backdrop-blur-md
+              "
+            >
+              <div
+                onClick={(e) => e.stopPropagation()}
+                className="relative"
+              >
+                <button
+                  onClick={() => setSelectedChef(null)}
+                  className="
+                    absolute
+                    -right-2
+                    -top-2
+                    z-10
+                    flex
+                    h-10
+                    w-10
+                    items-center
+                    justify-center
+                    rounded-full
+                    bg-[#D4AF37]
+                    text-lg
+                    font-bold
+                    text-black
+                  "
+                >
+                  ✕
+                </button>
+
+                <img
+                  src={selectedChef.image}
+                  alt={selectedChef.name}
+                  className="
+                    max-h-[85vh]
+                    max-w-[90vw]
+                    rounded-3xl
+                    object-contain
+                    shadow-2xl
+                  "
+                />
+
+                <div className="mt-5 text-center">
+                  <h3 className="text-2xl font-bold text-white">
+                    {selectedChef.name}
+                  </h3>
+
+                  <p className="mt-2 text-[#D4AF37]">
+                    {selectedChef.role}
+                  </p>
+
+                  <p className="mx-auto mt-3 max-w-xl text-gray-400">
+                    {selectedChef.description}
+                  </p>
+                </div>
+              </div>
+            </div>
+          )}
         </section>
 
         {/* TEAM */}

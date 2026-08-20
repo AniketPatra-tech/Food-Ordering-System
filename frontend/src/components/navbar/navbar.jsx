@@ -133,44 +133,51 @@ return (
                         group
                     "
                 >
-                    <div className="
-                        relative
-                        flex
-                        h-10
-                        w-10
-                        items-center
-                        justify-center
-                        rounded-xl
-                        border
-                        border-[#D4AF37]/40
-                        bg-gradient-to-br
-                        from-[#D4AF37]
-                        via-[#E7C85A]
-                        to-[#B8860B]
-                        text-lg
-                        font-black
-                        text-black
-                        shadow-lg
-                        shadow-[#D4AF37]/10
-                        transition
-                        duration-300
-                        group-hover:scale-105
-                    ">
-                        Z
+                    <div
+                        className="
+                            relative
+                            flex
+                            h-10
+                            w-10
+                            items-center
+                            justify-center
+                            overflow-hidden
+                            rounded-xl
+                            border
+                            border-white/20
+                            bg-gradient-to-br
+                            from-[#FF9933]
+                            via-[#FFF8E7]
+                            to-[#138808]
+                            text-lg
+                            font-black
+                            text-black
+                            shadow-xl
+                            shadow-[#FF9933]/20
+                            transition
+                            duration-300
+                            group-hover:scale-105
+                        "
+                    >
+                        <div className="absolute h-5 w-5 rounded-full border border-[#000080]/20" />
+                        <span className="relative z-10">Z</span>
                     </div>
 
                     <div className="leading-none">
-                        <h1 className="
-                            bg-gradient-to-r
-                            from-[#D4AF37]
-                            via-[#F5D77A]
-                            to-[#C89B20]
-                            bg-clip-text
-                            text-lg
-                            font-bold
-                            tracking-wide
-                            text-transparent
-                        ">
+                        <h1
+                            className="
+                                bg-gradient-to-r
+                                from-[#FF9933]
+                                via-white
+                                to-[#138808]
+                                bg-clip-text
+                                text-lg
+                                font-bold
+                                tracking-wide
+                                text-transparent
+                                drop-shadow-sm
+                            "
+                        >
                             Zestora
                         </h1>
 

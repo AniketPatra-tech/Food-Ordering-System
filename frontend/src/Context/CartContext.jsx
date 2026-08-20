@@ -6,6 +6,10 @@ export function CartProvider({ children }) {
     const [cartItems, setCartItems] = useState([]);
     const [cartOpen, setCartOpen] = useState(false);
 
+    // Coupon State
+    const [couponDiscount, setCouponDiscount] = useState(0);
+    const [selectedCoupon, setSelectedCoupon] = useState(null);
+
     const addToCart = (food) => {
         setCartItems((prev) => {
             const existing = prev.find((item) => item.id === food.id);
@@ -13,7 +17,10 @@ export function CartProvider({ children }) {
             if (existing) {
                 return prev.map((item) =>
                     item.id === food.id
-                        ? { ...item, quantity: item.quantity + 1 }
+                        ? {
+                              ...item,
+                              quantity: item.quantity + 1,
+                          }
                         : item
                 );
             }
@@ -25,14 +32,19 @@ export function CartProvider({ children }) {
     };
 
     const removeFromCart = (id) => {
-        setCartItems((prev) => prev.filter((item) => item.id !== id));
+        setCartItems((prev) =>
+            prev.filter((item) => item.id !== id)
+        );
     };
 
     const increaseQuantity = (id) => {
         setCartItems((prev) =>
             prev.map((item) =>
                 item.id === id
-                    ? { ...item, quantity: item.quantity + 1 }
+                    ? {
+                          ...item,
+                          quantity: item.quantity + 1,
+                      }
                     : item
             )
         );
@@ -40,17 +52,23 @@ export function CartProvider({ children }) {
 
     const decreaseQuantity = (id) => {
         setCartItems((prev) =>
-            prev
-                .map((item) =>
-                    item.id === id && item.quantity > 1
-                        ? { ...item, quantity: item.quantity - 1 }
-                        : item
-                )
+            prev.map((item) =>
+                item.id === id && item.quantity > 1
+                    ? {
+                          ...item,
+                          quantity: item.quantity - 1,
+                      }
+                    : item
+            )
         );
     };
 
     const clearCart = () => {
         setCartItems([]);
+
+        // Clear coupon after order/cart clear
+        setCouponDiscount(0);
+        setSelectedCoupon(null);
     };
 
     const cartCount = cartItems.reduce(
@@ -59,12 +77,20 @@ export function CartProvider({ children }) {
     );
 
     const cartSubtotal = cartItems.reduce(
-        (total, item) => total + item.price * item.quantity,
+        (total, item) =>
+            total + item.price * item.quantity,
         0
     );
 
-    const deliveryCharge = cartSubtotal > 0 ? 40 : 0;
-    const cartTotal = cartSubtotal + deliveryCharge;
+    const deliveryCharge =
+        cartSubtotal > 0 ? 40 : 0;
+
+    const cartTotal = Math.max(
+        cartSubtotal +
+            deliveryCharge -
+            couponDiscount,
+        0
+    );
 
     return (
         <CartContext.Provider
@@ -74,13 +100,20 @@ export function CartProvider({ children }) {
                 cartSubtotal,
                 deliveryCharge,
                 cartTotal,
+
+                couponDiscount,
+                setCouponDiscount,
+                selectedCoupon,
+                setSelectedCoupon,
+
                 addToCart,
                 removeFromCart,
                 increaseQuantity,
                 decreaseQuantity,
                 clearCart,
+
                 cartOpen,
-                setCartOpen
+                setCartOpen,
             }}
         >
             {children}

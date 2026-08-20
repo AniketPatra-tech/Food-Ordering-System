@@ -8,9 +8,12 @@ import axios from "axios";
 
 const CouponContext = createContext();
 
-
 export function CouponProvider({ children }) {
     const [appliedCoupon, setAppliedCoupon] =
+        useState(null);
+
+    // NEW
+    const [selectedCoupon, setSelectedCoupon] =
         useState(null);
 
     const [couponLoading, setCouponLoading] =
@@ -105,6 +108,7 @@ export function CouponProvider({ children }) {
 
     const removeCoupon = () => {
         setAppliedCoupon(null);
+        setSelectedCoupon(null);
         setCouponError("");
     };
 
@@ -115,8 +119,8 @@ export function CouponProvider({ children }) {
 
     const isCouponApplied = (code) => {
         return (
-            appliedCoupon?.code ===
-            code
+            appliedCoupon?.code === code ||
+            selectedCoupon?.code === code
         );
     };
 
@@ -134,6 +138,11 @@ export function CouponProvider({ children }) {
         <CouponContext.Provider
             value={{
                 appliedCoupon,
+                setAppliedCoupon,
+
+                // NEW
+                selectedCoupon,
+                setSelectedCoupon,
 
                 couponLoading,
 
@@ -152,7 +161,6 @@ export function CouponProvider({ children }) {
         </CouponContext.Provider>
     );
 }
-
 
 export function useCoupon() {
     const context =
