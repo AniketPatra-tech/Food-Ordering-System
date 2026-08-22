@@ -75,6 +75,58 @@ import chickenSandwichImage from "../assets/FoodPictures/ChickenSandwich.png";
 import clubSandwichImage from "../assets/FoodPictures/ClubSandwich.png";
 import paneerSandwichImage from "../assets/FoodPictures/PaneerSandwich.png";
 import butterChickenImage from "../assets/FoodPictures/ButterChicken.png";
+import kadaiPaneerImage from "../assets/FoodPictures/KadaiPaneer.png";
+import shahiPaneerImage from "../assets/FoodPictures/ShahiPaneer.png";
+import chickenCurryImage from "../assets/FoodPictures/ChickenCurry.png";
+import butterNaancomboImage from "../assets/FoodPictures/ButterNaanCombo.png";
+import vegfriedRiceImage from "../assets/FoodPictures/VegFriedRice.png";
+import eggfriedRiceImage from "../assets/FoodPictures/EggFriedRice.png";
+import paneerfriedRiceImage from "../assets/FoodPictures/PaneerFriedRice.png";
+import chickenfriedRicecomboImage from "../assets/FoodPictures/ChickenFriedRiceCombo.png";
+import familycombomealImage from "../assets/FoodPictures/FamilyComboMeal.png";
+import blackforestcakeImage from "../assets/FoodPictures/BlackForestCake.png";
+import chocolatetrufflecakeImage from "../assets/FoodPictures/ChocolateTruffleCake.png";
+import redvelvetcakeImage from "../assets/FoodPictures/RedVelvetCake.png";
+import chocolateMuffinImage from "../assets/FoodPictures/ChocolateMuffin.png";
+import cheesecroissantImage from "../assets/FoodPictures/CheeseCroissant.png";
+import zestoraroyalplatterImage from "../assets/FoodPictures/ZestoraRoyalPlatter.png";
+import seafooddelightImage from "../assets/FoodPictures/SeafoodDelight.png";
+import paneerfeastplatterImage from "../assets/FoodPictures/PaneerFeastPlatter.png";
+import chefssignaturemealImage from "../assets/FoodPictures/Chef'sSignatureMeal.png";
+import festivalspecialthaliImage from "../assets/FoodPictures/FestivalSpecialThali.png";
+import alooparathaImage from "../assets/FoodPictures/AlooParatha.png";
+import paneerparathaImage from "../assets/FoodPictures/PaneerParatha.png";
+import breadomeletteImage from "../assets/FoodPictures/BreadOmelette.png";
+import chickensausagebreakfastImage from "../assets/FoodPictures/ChickenSausageBreakfast.png";
+import healthyfruitbowlImage from "../assets/FoodPictures/HealthyFruitBowl.png";
+import premiumchocolateswissrollImage from "../assets/FoodPictures/PremiumChocolateSwissRoll.png";
+import alupostoImage from "../assets/FoodPictures/AluPosto.png";
+import jhingepostoImage from "../assets/FoodPictures/JhingePosto.png";
+import lauchingriImage from "../assets/FoodPictures/LauChingri.png";
+import dabchingriImage from "../assets/FoodPictures/DabChingri.png";
+import patolchingriImage from "../assets/FoodPictures/PatolChingri.png";
+import patolerdormaImage from "../assets/FoodPictures/PatolerDorma.png";
+import chingrimalaicurryImage from "../assets/FoodPictures/ChingriMalaiCurry.png";
+import sorsheilishImage from "../assets/FoodPictures/SorsheIlish.png";
+import mocharghontoImage from "../assets/FoodPictures/MocharGhonto.png";
+import dhokardalnaImage from "../assets/FoodPictures/DhokarDalna.png";
+import kochupatachingriImage from "../assets/FoodPictures/KochuPataChingri.png";
+import machermathadiyemoongdalImage from "../assets/FoodPictures/MacherMathaDiyeMoongDal.png";
+import basantipulaoImage from "../assets/FoodPictures/BasantiPulao.png";
+import chitolmuithaImage from "../assets/FoodPictures/ChitolMuitha.png";
+import kashamangshoImage from "../assets/FoodPictures/KashaMangsho.png";
+import bhetkipaturiImage from "../assets/FoodPictures/BhetkiPaturi.png";
+import alupatolerkoshaImage from "../assets/FoodPictures/AluPatolerKosha.png";
+import bengalidimcurryImage from "../assets/FoodPictures/BengaliDimCurry.png";
+import aloophulkopidalnaImage from "../assets/FoodPictures/AlooPhulkopiDalna.png";
+import bandhakopirghontoImage from "../assets/FoodPictures/BandhakopirGhonto.png";
+import potolbhajaImage from "../assets/FoodPictures/PotolBhaja.png";
+import begunbhajaImage from "../assets/FoodPictures/BegunBhaja.png";
+import mulochingriImage from "../assets/FoodPictures/MuloChingri.png";
+import cholardalImage from "../assets/FoodPictures/CholarDal.png";
+import luchialoordomImage from "../assets/FoodPictures/LuchiAloorDom.png";
+import puishaakchingriImage from "../assets/FoodPictures/PuiShaakChingri.png";
+
 
 
 export const foods = [
@@ -1262,7 +1314,7 @@ export const foods = [
     preparationTime: "20 min",
     bestseller: true,
     available: true,
-    image: "/foods/kadai-paneer.jpg",
+    image: kadaiPaneerImage,
     description: "Paneer cooked with bell peppers and spices."
     },
 
@@ -1277,7 +1329,7 @@ export const foods = [
     preparationTime: "20 min",
     bestseller: false,
     available: true,
-    image: "/foods/shahi-paneer.jpg",
+    image: shahiPaneerImage ,
     description: "Rich creamy paneer curry."
     },
 
@@ -1292,7 +1344,7 @@ export const foods = [
     preparationTime: "22 min",
     bestseller: true,
     available: true,
-    image: "/foods/chicken-curry.jpg",
+    image: chickenCurryImage,
     description: "Traditional Indian chicken curry."
     },
 
@@ -1307,7 +1359,7 @@ export const foods = [
     preparationTime: "15 min",
     bestseller: false,
     available: true,
-    image: "/foods/butter-naan.jpg",
+    image: butterNaancomboImage,
     description: "Fresh butter naan served with curry."
     },
 
@@ -1324,7 +1376,7 @@ export const foods = [
     preparationTime: "15 min",
     bestseller: false,
     available: true,
-    image: "/foods/veg-fried-rice.jpg",
+    image: vegfriedRiceImage,
     description: "Classic fried rice with fresh vegetables."
     },
 
@@ -1339,7 +1391,7 @@ export const foods = [
     preparationTime: "15 min",
     bestseller: true,
     available: true,
-    image: "/foods/egg-fried-rice.jpg",
+    image: eggfriedRiceImage,
     description: "Fried rice tossed with eggs and vegetables."
     },
 
@@ -1354,7 +1406,7 @@ export const foods = [
     preparationTime: "18 min",
     bestseller: false,
     available: true,
-    image: "/foods/paneer-fried-rice.jpg",
+    image: paneerfriedRiceImage,
     description: "Fried rice loaded with paneer cubes."
     },
 
@@ -1369,7 +1421,7 @@ export const foods = [
     preparationTime: "20 min",
     bestseller: true,
     available: true,
-    image: "/foods/chicken-fried-rice-combo.jpg",
+    image: chickenfriedRicecomboImage,
     description: "Chicken fried rice served with chilli chicken."
     },
 
@@ -1384,7 +1436,7 @@ export const foods = [
     preparationTime: "30 min",
     bestseller: true,
     available: true,
-    image: "/foods/family-combo.jpg",
+    image: familycombomealImage,
     description: "A complete meal for 3–4 people."
     },
 
@@ -1401,7 +1453,7 @@ export const foods = [
     preparationTime: "5 min",
     bestseller: true,
     available: true,
-    image: "/foods/black-forest-cake.jpg",
+    image: blackforestcakeImage,
     description: "Fresh black forest cake with chocolate layers."
     },
 
@@ -1416,7 +1468,7 @@ export const foods = [
     preparationTime: "5 min",
     bestseller: true,
     available: true,
-    image: "/foods/chocolate-truffle-cake.jpg",
+    image: chocolatetrufflecakeImage,
     description: "Rich chocolate truffle cake."
     },
 
@@ -1431,7 +1483,7 @@ export const foods = [
     preparationTime: "5 min",
     bestseller: false,
     available: true,
-    image: "/foods/red-velvet-cake.jpg",
+    image: redvelvetcakeImage,
     description: "Soft and creamy red velvet cake."
     },
 
@@ -1446,7 +1498,7 @@ export const foods = [
     preparationTime: "3 min",
     bestseller: false,
     available: true,
-    image: "/foods/chocolate-muffin.jpg",
+    image: chocolateMuffinImage,
     description: "Soft muffin with chocolate chips."
     },
 
@@ -1461,7 +1513,7 @@ export const foods = [
     preparationTime: "3 min",
     bestseller: false,
     available: true,
-    image: "/foods/cheese-croissant.jpg",
+    image: cheesecroissantImage,
     description: "Flaky croissant filled with cheese."
     },
 
@@ -1478,7 +1530,7 @@ export const foods = [
     preparationTime: "35 min",
     bestseller: true,
     available: true,
-    image: "/foods/royal-platter.jpg",
+    image: zestoraroyalplatterImage,
     description: "Signature platter featuring Zestora's best dishes."
     },
 
@@ -1493,7 +1545,7 @@ export const foods = [
     preparationTime: "30 min",
     bestseller: true,
     available: true,
-    image: "/foods/seafood-delight.jpg",
+    image: seafooddelightImage,
     description: "Fresh seafood cooked with premium spices."
     },
 
@@ -1508,7 +1560,7 @@ export const foods = [
     preparationTime: "25 min",
     bestseller: false,
     available: true,
-    image: "/foods/paneer-feast.jpg",
+    image: paneerfeastplatterImage,
     description: "A platter dedicated to paneer lovers."
     },
 
@@ -1523,7 +1575,7 @@ export const foods = [
     preparationTime: "28 min",
     bestseller: true,
     available: true,
-    image: "/foods/chef-signature-meal.jpg",
+    image: chefssignaturemealImage,
     description: "Hand-picked dishes recommended by our chef."
     },
 
@@ -1538,7 +1590,7 @@ export const foods = [
     preparationTime: "25 min",
     bestseller: true,
     available: true,
-    image: "/foods/festival-thali.jpg",
+    image: festivalspecialthaliImage,
     description: "Special festive thali with multiple delicacies."
     },
 
@@ -1555,7 +1607,7 @@ export const foods = [
     preparationTime: "12 min",
     bestseller: true,
     available: true,
-    image: "/foods/aloo-paratha.jpg",
+    image: alooparathaImage,
     description: "Stuffed potato paratha served with curd."
     },
 
@@ -1570,7 +1622,7 @@ export const foods = [
     preparationTime: "12 min",
     bestseller: false,
     available: true,
-    image: "/foods/paneer-paratha.jpg",
+    image: paneerparathaImage,
     description: "Paratha stuffed with spiced paneer."
     },
 
@@ -1585,7 +1637,7 @@ export const foods = [
     preparationTime: "8 min",
     bestseller: true,
     available: true,
-    image: "/foods/bread-omelette.jpg",
+    image: breadomeletteImage,
     description: "Classic street-style bread omelette."
     },
 
@@ -1600,7 +1652,7 @@ export const foods = [
     preparationTime: "10 min",
     bestseller: false,
     available: true,
-    image: "/foods/chicken-sausage.jpg",
+    image: chickensausagebreakfastImage,
     description: "Chicken sausages served with toast."
     },
 
@@ -1615,7 +1667,7 @@ export const foods = [
     preparationTime: "5 min",
     bestseller: false,
     available: true,
-    image: "/foods/fruit-bowl.jpg",
+    image: healthyfruitbowlImage,
     description: "Fresh seasonal fruits served chilled."
     },
 
@@ -1627,7 +1679,7 @@ export const foods = [
         price: 9,
         oldPrice: 249,
         rating: 4.9,
-        image: "/foods/chocolate-swiss-roll.jpg",
+        image: premiumchocolateswissrollImage,
         description: "Light chocolate sponge roll layered with silky cream and cocoa goodness."
     },
 
@@ -1654,7 +1706,7 @@ export const foods = [
     preparationTime: "15 min",
     bestseller: true,
     available: true,
-    image: "/foods/alu-posto.jpg",
+    image: alupostoImage,
     description: "Traditional Bengali potatoes cooked with rich poppy seed paste."
     },
 
@@ -1669,7 +1721,7 @@ export const foods = [
     preparationTime: "18 min",
     bestseller: false,
     available: true,
-    image: "/foods/jhinge-posto.jpg",
+    image: jhingepostoImage,
     description: "Tender ridge gourd cooked in authentic Bengali posto gravy."
     },
 
@@ -1684,7 +1736,7 @@ export const foods = [
     preparationTime: "20 min",
     bestseller: true,
     available: true,
-    image: "/foods/lau-chingri.jpg",
+    image: lauchingriImage,
     description: "Bottle gourd slow-cooked with fresh prawns and Bengali spices."
     },
 
@@ -1699,7 +1751,7 @@ export const foods = [
     preparationTime: "30 min",
     bestseller: true,
     available: true,
-    image: "/foods/dab-chingri.jpg",
+    image: dabchingriImage,
     description: "Premium prawns cooked inside tender coconut with aromatic mustard gravy."
     },
 
@@ -1714,7 +1766,7 @@ export const foods = [
     preparationTime: "22 min",
     bestseller: true,
     available: true,
-    image: "/foods/patol-chingri.jpg",
+    image: patolchingriImage,
     description: "Pointed gourd cooked with juicy prawns in traditional Bengali style."
     },
 
@@ -1729,7 +1781,7 @@ export const foods = [
     preparationTime: "25 min",
     bestseller: true,
     available: true,
-    image: "/foods/patoler-dorma.jpg",
+    image: patolerdormaImage,
     description: "Stuffed pointed gourd filled with flavorful mince and slow-cooked in rich gravy."
     },
 
@@ -1744,7 +1796,7 @@ export const foods = [
     preparationTime: "30 min",
     bestseller: true,
     available: true,
-    image: "/foods/chingri-malai-curry.jpg",
+    image: chingrimalaicurryImage,
     description: "Jumbo prawns cooked in rich coconut milk gravy."
     },
 
@@ -1759,7 +1811,7 @@ export const foods = [
     preparationTime: "25 min",
     bestseller: true,
     available: true,
-    image: "/foods/shorshe-ilish.jpg",
+    image: sorsheilishImage,
     description: "Hilsa fish cooked in authentic Bengali mustard gravy."
     },
 
@@ -1774,7 +1826,7 @@ export const foods = [
     preparationTime: "20 min",
     bestseller: false,
     available: true,
-    image: "/foods/mochar-ghonto.jpg",
+    image: mocharghontoImage,
     description: "Traditional banana blossom curry with Bengali spices."
     },
 
@@ -1789,7 +1841,7 @@ export const foods = [
     preparationTime: "22 min",
     bestseller: true,
     available: true,
-    image: "/foods/dhokar-dalna.jpg",
+    image: dhokardalnaImage,
     description: "Lentil cakes cooked in rich Bengali-style curry."
     },
 
@@ -1804,7 +1856,7 @@ export const foods = [
     preparationTime: "25 min",
     bestseller: true,
     available: true,
-    image: "/foods/kochu-pata-chingri.jpg",
+    image: kochupatachingriImage,
     description: "Prawns cooked with colocasia leaves in traditional Bengali style."
     },
 
@@ -1819,7 +1871,7 @@ export const foods = [
     preparationTime: "20 min",
     bestseller: true,
     available: true,
-    image: "/foods/macher-matha-moong-dal.jpg",
+    image: machermathadiyemoongdalImage,
     description: "Roasted moong dal cooked with fish head, a Bengali classic."
     },
 
@@ -1834,7 +1886,7 @@ export const foods = [
     preparationTime: "18 min",
     bestseller: true,
     available: true,
-    image: "/foods/basanti-pulao.jpg",
+    image: basantipulaoImage,
     description: "Sweet fragrant Bengali pulao with raisins and cashews."
     },
 
@@ -1849,7 +1901,7 @@ export const foods = [
     preparationTime: "28 min",
     bestseller: true,
     available: true,
-    image: "/foods/chitol-muitha.jpg",
+    image: chitolmuithaImage,
     description: "Traditional fish dumplings cooked in rich Bengali gravy."
     },
 
@@ -1864,7 +1916,7 @@ export const foods = [
     preparationTime: "30 min",
     bestseller: true,
     available: true,
-    image: "/foods/kasha-mangsho.jpg",
+    image: kashamangshoImage,
     description: "Slow-cooked spicy Bengali mutton curry."
     },
 
@@ -1879,7 +1931,7 @@ export const foods = [
     preparationTime: "22 min",
     bestseller: true,
     available: true,
-    image: "/foods/bhetki-paturi.jpg",
+    image: bhetkipaturiImage,
     description: "Bhetki fish marinated in mustard and steamed in banana leaf."
     },
 
@@ -1894,7 +1946,7 @@ export const foods = [
     preparationTime: "18 min",
     bestseller: true,
     available: true,
-    image: "/foods/alu-patoler-kosha.jpg",
+    image: alupatolerkoshaImage,
     description: "Potato and pointed gourd cooked in rich Bengali spices."
     },
 
@@ -1909,7 +1961,7 @@ export const foods = [
     preparationTime: "18 min",
     bestseller: true,
     available: true,
-    image: "/foods/bengali-dim-curry.jpg",
+    image: bengalidimcurryImage,
     description: "Boiled eggs simmered in traditional Bengali gravy."
     },
 
@@ -1924,7 +1976,7 @@ export const foods = [
     preparationTime: "20 min",
     bestseller: true,
     available: true,
-    image: "/foods/aloo-phulkopi-dalna.jpg",
+    image: aloophulkopidalnaImage,
     description: "Potato and cauliflower cooked in classic Bengali curry."
     },
 
@@ -1939,7 +1991,7 @@ export const foods = [
     preparationTime: "18 min",
     bestseller: false,
     available: true,
-    image: "/foods/bandhakopir-ghonto.jpg",
+    image: bandhakopirghontoImage,
     description: "Slow-cooked cabbage with aromatic Bengali spices."
     },
 
@@ -1954,7 +2006,7 @@ export const foods = [
     preparationTime: "8 min",
     bestseller: true,
     available: true,
-    image: "/foods/potol-bhaja.jpg",
+    image: potolbhajaImage,
     description: "Crispy fried pointed gourd served Bengali style."
     },
 
@@ -1969,7 +2021,7 @@ export const foods = [
     preparationTime: "8 min",
     bestseller: true,
     available: true,
-    image: "/foods/begun-bhaja.jpg",
+    image: begunbhajaImage,
     description: "Golden fried eggplant slices with Bengali seasoning."
     },
 
@@ -1984,7 +2036,7 @@ export const foods = [
     preparationTime: "22 min",
     bestseller: false,
     available: true,
-    image: "/foods/mulo-chingri.jpg",
+    image: mulochingriImage,
     description: "Radish cooked with prawns in traditional Bengali style."
     },
 
@@ -1999,7 +2051,7 @@ export const foods = [
     preparationTime: "15 min",
     bestseller: true,
     available: true,
-    image: "/foods/cholar-dal.jpg",
+    image: cholardalImage,
     description: "Sweet and fragrant Bengal gram dal with coconut pieces."
     },
 
@@ -2014,7 +2066,7 @@ export const foods = [
     preparationTime: "15 min",
     bestseller: true,
     available: true,
-    image: "/foods/luchi-aloor-dom.jpg",
+    image: luchialoordomImage,
     description: "Soft luchis served with spicy Bengali potato curry."
     },
 
@@ -2029,7 +2081,7 @@ export const foods = [
     preparationTime: "20 min",
     bestseller: false,
     available: true,
-    image: "/foods/pui-shaak-chingri.jpg",
+    image: puishaakchingriImage,
     description: "Malabar spinach cooked with prawns and Bengali spices."
     }
 
